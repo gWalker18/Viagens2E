@@ -8,6 +8,5 @@ public class Main {
         mochileiro.setCpf(Validacao.cpf("123"));
         Turista mochileira = new Turista();
         mochileira.setNome("Tomas");
-
     }
 }
