@@ -13,22 +13,21 @@ public class Main {
         // Atribuicao indireta
         String nome = JOptionPane.showInputDialog("Entre com seu nome:");
         mochileira.setNome(nome);
-        System.out.println("O nome do objeto é :"+mochileira.getNome());
+
         // Fazer o mesmo para capturar o cpf
         String cpf = JOptionPane.showInputDialog("Entre com seu cpf:");
         mochileira.setCpf(cpf);
-        System.out.println("O cpf do objeto é :"+mochileira.getCpf());
-        // Novo objeto
-        nome = JOptionPane.showInputDialog("Qual seu nome:");
+
         // Criando objeto com construtor recebendo nome
         Turista outroTurista = new Turista(nome);
-        System.out.println("O nome dessa turista é:" + outroTurista.getNome());
+        System.out.println("O nome dessa turista é: " + outroTurista.getNome());
         // Fazer o recebimento do cpf para este turista
-        cpf = JOptionPane.showInputDialog("Entre com seu cpf:");
         if(Validacao.cpf(cpf))
            outroTurista.setCpf(cpf);
+
         else
             System.out.println("CPF inválido!");
         System.out.println("O cpf do objeto é :"+cpf);
+
     }
 }
